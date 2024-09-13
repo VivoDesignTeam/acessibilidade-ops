@@ -1,5 +1,5 @@
 ---
-name: Nova tarefa 🆕
+name: 🆕 Nova tarefa
 about: Cria uma nova tarefa vazia
 title: ""
 projects: ["vivodesignopsbr/26"]
