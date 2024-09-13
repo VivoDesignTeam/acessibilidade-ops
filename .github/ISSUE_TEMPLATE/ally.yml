@@ -57,6 +57,13 @@ body:
     validations:
       required: true
   - type: input
+    id: relator
+    attributes:
+      label: Relator do pedido
+      placeholder: Seu nome
+    validations:
+      required: true
+  - type: input
     id: ambassador
     attributes:
       label: Embaixador de acessibilidade
