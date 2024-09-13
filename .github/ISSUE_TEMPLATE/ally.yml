@@ -1,0 +1,65 @@
+name: 🔍 Revisão de especificação de acessibilidade
+description: Precisa da revisão de uma especificação de acessibilidade? Envie a solicitação aqui.
+title: "[A11y]: "
+labels: ["frente: acessibilidade", "revisão de spec"]
+projects: ["VivoDesignTeam/26"]
+body:
+  - type: input
+    id: journey
+    attributes:
+      label: Jornada
+      placeholder: Nome da jornada
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição
+      placeholder: Conte-nos um pouco mais sobre a jornada em questão
+    validations:
+      required: true
+  - type: dropdown
+    id: product
+    attributes:
+      label: Produto
+      options:
+        - MVE
+        - Novo App
+        - App As is (Atual)
+        - Loja de CE
+        - Loja de Serviços
+        - On Going
+        - Portal
+    validations:
+      required: true
+  - type: input
+    id: squad
+    attributes:
+      label: Squad/Frente
+      placeholder: Nome da squad
+    validations:
+      required: true
+  - type: input
+    id: figma-link
+    attributes:
+      label: Link Figma
+      description: Informe o link da documentação a ser revisada
+      placeholder: Link do Figma
+    validations:
+      required: true
+  - type: dropdown
+    id: nova-spec
+    attributes:
+      label: Essa é uma alteração ou uma nova Spec?
+      options:
+        - Nova Spec
+        - Alteração em Spec existente
+    validations:
+      required: true
+  - type: input
+    id: ambassador
+    attributes:
+      label: Embaixador de acessibilidade
+      placeholder: Nome do embaixador
+    validations:
+      required: true
