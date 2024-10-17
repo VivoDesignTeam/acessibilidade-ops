@@ -1,21 +1,21 @@
-name: 🔍 Revisão de especificação de acessibilidade
-description: Precisa da revisão de uma especificação de acessibilidade? Envie a solicitação aqui.
-title: "[Revisão de Spec]: "
-labels: ["frente: acessibilidade", "revisão de spec"]
+name: 📃 Documentação de componente
+description: Template para documentação de componentes
+title: "[Documentação de Componente]: "
+labels: ["frente: acessibilidade", "documentação de componente"]
 projects: ["VivoDesignTeam/26"]
 body:
   - type: input
-    id: journey
+    id: component
     attributes:
-      label: Jornada
-      placeholder: Nome da jornada
+      label: Componente
+      placeholder: Nome do componente
     validations:
       required: true
   - type: textarea
     id: description
     attributes:
       label: Descrição
-      placeholder: Conte-nos um pouco mais sobre a jornada em questão
+      placeholder: Conte-nos um pouco mais sobre esse componente
     validations:
       required: true
   - type: dropdown
@@ -48,12 +48,12 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: nova-spec
+    id: novo-comp
     attributes:
-      label: Essa é uma alteração ou uma nova Spec?
+      label: Este é um componente novo ou alteração?
       options:
-        - Nova Spec
-        - Alteração em Spec existente
+        - Novo componente
+        - Alteração em componente existente
     validations:
       required: true
   - type: input
@@ -67,6 +67,6 @@ body:
     id: ambassador
     attributes:
       label: Embaixador de acessibilidade
-      placeholder: Nome do embaixador
+      placeholder: Nome do embaixador (Se tiver)
     validations:
-      required: true
+      required: false
