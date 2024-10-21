@@ -1,0 +1,22 @@
+- name: Move to next iteration
+  uses: blombard/move-to-next-iteration@v0.6.0
+  on:
+  schedule:
+    # Runs "at 05:00, only on Monday" (see https://crontab.guru)
+    - cron: '0 5 * * 1'
+
+  jobs:
+    move-to-next-iteration:
+      name: Move to next iteration
+      runs-on: ubuntu-latest
+
+      steps:
+      - uses: blombard/move-to-next-iteration@master
+        with:
+          owner: VivoDesignTeam
+          number: 26
+          token: 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
+          iteration-field: Sprint
+          iteration: last
+          new-iteration: current
+          excluded-statuses: "Finalizadas"
