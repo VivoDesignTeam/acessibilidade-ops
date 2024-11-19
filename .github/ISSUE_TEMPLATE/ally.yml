@@ -30,6 +30,8 @@ body:
         - Loja de Serviços
         - On Going
         - Portal
+        - Uniecom
+        - Outros
     validations:
       required: true
   - type: input
